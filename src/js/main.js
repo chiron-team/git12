@@ -16,6 +16,8 @@ class Git12App {
         this.setupScrollEffects();
         console.log('Git12 app initialized successfully!');
         this.renderCounter();
+        this.setupCounterButtons();
+        this.setupCounterButtons();
     }
 
     bindEvents() {
@@ -37,7 +39,7 @@ class Git12App {
         
         // Setup intersection observer for animations
         this.setupIntersectionObserver();
-        this.setupCounter();
+        this.counter = new Counter(0); // Initialize counter with initial value
     }
 
     setupNavigation() {
