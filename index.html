@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git12</title>
+    <meta name="description" content="A modern HTML, CSS, and JavaScript application">
+    <meta name="author" content="">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="src/js/main.js" as="script">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <h1>Git12</h1>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="container">
+                <h2 class="hero__title">Welcome to Git12</h2>
+                <p class="hero__subtitle">A modern HTML, CSS, and JavaScript application</p>
+                <button class="btn btn--primary" id="cta-button">Get Started</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section__title">About</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 class="card__title">Modern</h3>
+                        <p class="card__description">Built with modern web standards and best practices.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Responsive</h3>
+                        <p class="card__description">Fully responsive design that works on all devices.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Fast</h3>
+                        <p class="card__description">Optimized for performance and accessibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+                <form class="form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message</label>
+                        <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Git12. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js"></script>
+</body>
+</html>

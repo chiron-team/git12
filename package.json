@@ -1,0 +1,40 @@
+{
+  "name": "git12",
+  "version": "1.0.0",
+  "description": "A modern HTML, CSS, and JavaScript application",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve -s .",
+    "dev": "live-server --port=3000",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o dist/styles/main.min.css src/styles/main.css",
+    "minify:js": "terser src/js/main.js -o dist/js/main.min.js",
+    "lint": "eslint src/js/**/*.js",
+    "lint:fix": "eslint src/js/**/*.js --fix",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "frontend",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.2.5",
+    "serve": "^14.2.1",
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.26.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
