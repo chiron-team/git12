@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart - Git12 Store</title>
+    <meta name="description" content="Review your shopping cart. View items, update quantities, and proceed to checkout at Git12 Store.">
+    <meta name="author" content="">
+    <meta name="keywords" content="cart, shopping cart, checkout, buy, order">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shopping Cart - Git12 Store">
+    <meta property="og:description" content="Review your shopping cart and proceed to checkout.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="js/main.js" as="script">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <a href="index.html">
+                    <h1>Git12</h1>
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="catalog.html" class="nav__link">Catalog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a href="cart.html" class="nav__link nav__link--active">Cart</a>
+                </li>
+            </ul>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section" style="margin-top: 70px;">
+            <div class="container">
+                <h2 class="section__title">Shopping Cart</h2>
+                <div class="cart" id="cart-container">
+                    <div class="cart__items">
+                        <div class="card cart__item">
+                            <div class="cart__item-info">
+                                <h3 class="card__title">Product 1</h3>
+                                <p class="card__description">High-quality product with modern design.</p>
+                                <p class="card__price">$29.99</p>
+                            </div>
+                            <div class="cart__item-actions">
+                                <label for="qty-1" class="form__label">Qty</label>
+                                <input type="number" id="qty-1" name="qty-1" class="form__input" value="1" min="1" max="10">
+                                <button class="btn btn--primary" aria-label="Remove item">Remove</button>
+                            </div>
+                        </div>
+                        <div class="card cart__item">
+                            <div class="cart__item-info">
+                                <h3 class="card__title">Product 3</h3>
+                                <p class="card__description">Innovative product for everyday use.</p>
+                                <p class="card__price">$19.99</p>
+                            </div>
+                            <div class="cart__item-actions">
+                                <label for="qty-2" class="form__label">Qty</label>
+                                <input type="number" id="qty-2" name="qty-2" class="form__input" value="2" min="1" max="10">
+                                <button class="btn btn--primary" aria-label="Remove item">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__summary card">
+                        <h3 class="card__title">Order Summary</h3>
+                        <p>Subtotal: <strong>$69.97</strong></p>
+                        <p>Shipping: <strong>$5.00</strong></p>
+                        <p>Total: <strong>$74.97</strong></p>
+                        <a href="checkout.html" class="btn btn--primary">Proceed to Checkout</a>
+                    </div>
+                </div>
+                <a href="catalog.html" class="btn">&larr; Continue Shopping</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Git12. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
