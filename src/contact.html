@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Git12 Store</title>
+    <meta name="description" content="Get in touch with Git12 Store. We're here to help with questions, feedback, and support.">
+    <meta name="author" content="">
+    <meta name="keywords" content="contact, support, help, feedback, customer service">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us - Git12 Store">
+    <meta property="og:description" content="Get in touch with Git12 Store. We're here to help.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="js/main.js" as="script">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <a href="index.html">
+                    <h1>Git12</h1>
+                </a>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="catalog.html" class="nav__link">Catalog</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a href="cart.html" class="nav__link">Cart</a>
+                </li>
+            </ul>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section" style="margin-top: 70px;">
+            <div class="container">
+                <h2 class="section__title">Contact Us</h2>
+                <p class="section__description" style="text-align: center; max-width: 600px; margin: 0 auto 2rem;">Have a question or need help? Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form class="form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message</label>
+                        <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Other Ways to Reach Us</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3 class="card__title">Email</h3>
+                        <p class="card__description">support@git12store.com</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Phone</h3>
+                        <p class="card__description">+1 (555) 123-4567</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Address</h3>
+                        <p class="card__description">123 Commerce St, Suite 100, Business City, ST 12345</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Git12. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
