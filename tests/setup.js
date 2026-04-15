@@ -24,6 +24,26 @@ global.ResizeObserver = class ResizeObserver {
     unobserve() {}
 };
 
+// Mock Counter class (loaded as a separate script in browser)
+global.Counter = class Counter {
+    constructor(initialValue = 0) {
+        this.value = initialValue;
+    }
+    increment() {
+        this.value++;
+    }
+    decrement() {
+        this.value--;
+    }
+    render() {}
+};
+
+// Mock SharedComponents (loaded as a separate script in browser)
+global.SharedComponents = {
+    updateCartBadge: jest.fn(),
+    getCartCount: jest.fn(() => 0)
+};
+
 // Mock console methods for cleaner test output
 global.console = {
     ...console,
