@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Remera Básica Algodón",
+    "description": "Remera de algodón 100% peinado, corte regular y costura reforzada. Ideal para el uso diario con máxima comodidad.",
+    "price": 12999,
+    "category": "Remeras",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://via.placeholder.com/400x400?text=Remera+Basica",
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "name": "Remera Oversize Urban",
+    "description": "Remera oversize de algodón jersey con estampa frontal urbana. Perfecta para un look streetwear relajado.",
+    "price": 17499,
+    "category": "Remeras",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "image": "https://via.placeholder.com/400x400?text=Remera+Oversize",
+    "stock": 35
+  },
+  {
+    "id": 3,
+    "name": "Remera Manga Larga Thermal",
+    "description": "Remera de manga larga en tejido térmico liviano, ideal para entretiempo. Cuello redondo y puños elásticos.",
+    "price": 21999,
+    "category": "Remeras",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://via.placeholder.com/400x400?text=Remera+Thermal",
+    "stock": 20
+  },
+  {
+    "id": 4,
+    "name": "Remera Rayada Nautical",
+    "description": "Remera de rayas marineras en algodón y poliéster. Diseño clásico con corte slim fit y terminaciones premium.",
+    "price": 15999,
+    "category": "Remeras",
+    "sizes": ["S", "M", "L"],
+    "image": "https://via.placeholder.com/400x400?text=Remera+Nautical",
+    "stock": 28
+  },
+  {
+    "id": 5,
+    "name": "Ditto Jeans",
+    "description": "Jean de corte recto en denim rígido de 14 oz. Lavado clásico índigo con costuras en hilo contrastante. Un básico indispensable.",
+    "price": 34999,
+    "category": "Pantalones",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "image": "https://via.placeholder.com/400x400?text=Ditto+Jeans",
+    "stock": 40
+  },
+  {
+    "id": 6,
+    "name": "Jogger Cargo Street",
+    "description": "Pantalón jogger cargo en gabardina elastizada con bolsillos laterales y puño en el tobillo. Comodidad y estilo urbano.",
+    "price": 28999,
+    "category": "Pantalones",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://via.placeholder.com/400x400?text=Jogger+Cargo",
+    "stock": 25
+  },
+  {
+    "id": 7,
+    "name": "Pantalón Chino Classic",
+    "description": "Pantalón chino de gabardina liviana con corte slim. Versátil para combinar en looks casuales o semi-formales.",
+    "price": 31999,
+    "category": "Pantalones",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "image": "https://via.placeholder.com/400x400?text=Chino+Classic",
+    "stock": 30
+  },
+  {
+    "id": 8,
+    "name": "Bermuda Denim Relaxed",
+    "description": "Bermuda de jean en denim stretch con lavado stone. Largo hasta la rodilla y corte relajado para el verano.",
+    "price": 24999,
+    "category": "Pantalones",
+    "sizes": ["28", "30", "32", "34"],
+    "image": "https://via.placeholder.com/400x400?text=Bermuda+Denim",
+    "stock": 18
+  },
+  {
+    "id": 9,
+    "name": "Gorra Snapback Logo",
+    "description": "Gorra snapback con visera plana y logo bordado en el frente. Estructura de 6 paneles con cierre ajustable.",
+    "price": 9999,
+    "category": "Accesorios",
+    "sizes": ["Único"],
+    "image": "https://via.placeholder.com/400x400?text=Gorra+Snapback",
+    "stock": 60
+  },
+  {
+    "id": 10,
+    "name": "Cinturón Cuero Premium",
+    "description": "Cinturón de cuero vacuno legítimo con hebilla metálica cepillada. Terminación artesanal y durabilidad garantizada.",
+    "price": 18999,
+    "category": "Accesorios",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://via.placeholder.com/400x400?text=Cinturon+Cuero",
+    "stock": 22
+  },
+  {
+    "id": 11,
+    "name": "Mochila Urban Pack",
+    "description": "Mochila de lona resistente al agua con compartimento acolchado para notebook de hasta 15\". Múltiples bolsillos organizadores.",
+    "price": 27999,
+    "category": "Accesorios",
+    "sizes": ["Único"],
+    "image": "https://via.placeholder.com/400x400?text=Mochila+Urban",
+    "stock": 15
+  },
+  {
+    "id": 12,
+    "name": "Bufanda Lana Merino",
+    "description": "Bufanda tejida en lana merino suave y abrigada. Diseño liso con flecos en los extremos, perfecta para el invierno.",
+    "price": 14999,
+    "category": "Accesorios",
+    "sizes": ["Único"],
+    "image": "https://via.placeholder.com/400x400?text=Bufanda+Merino",
+    "stock": 33
+  }
+]
