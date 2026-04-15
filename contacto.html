@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git12 - Contacto</title>
+    <meta name="description" content="Ponte en contacto con nosotros">
+    <meta name="author" content="">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <header class="header"></header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero__title">Contacto</h2>
+                <p class="hero__subtitle">¿Tienes alguna pregunta? Escríbenos</p>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Envíanos un mensaje</h2>
+                <form class="form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Mensaje</label>
+                        <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/components.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

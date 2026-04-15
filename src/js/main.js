@@ -15,9 +15,6 @@ class Git12App {
         this.setupFormHandling();
         this.setupScrollEffects();
         console.log('Git12 app initialized successfully!');
-        this.renderCounter();
-        this.setupCounterButtons();
-        this.setupCounterButtons();
     }
 
     bindEvents() {
@@ -63,23 +60,25 @@ class Git12App {
             });
         });
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for anchor navigation links only
         navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    const headerHeight = document.querySelector('.header').offsetHeight;
-                    const targetPosition = targetElement.offsetTop - headerHeight;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
         });
     }
 

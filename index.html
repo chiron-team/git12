@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Git12</title>
+    <title>Git12 - Home</title>
     <meta name="description" content="A modern HTML, CSS, and JavaScript application">
     <meta name="author" content="">
     
@@ -15,32 +15,11 @@
     <link rel="stylesheet" href="src/styles/main.css">
     
     <!-- Preload critical resources -->
+    <link rel="preload" href="src/js/components.js" as="script">
     <link rel="preload" href="src/js/main.js" as="script">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav__brand">
-                <h1>Git12</h1>
-            </div>
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">About</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">Contact</a>
-                </li>
-            </ul>
-            <button class="nav__toggle" aria-label="Toggle navigation">
-                <span class="nav__toggle-line"></span>
-                <span class="nav__toggle-line"></span>
-                <span class="nav__toggle-line"></span>
-            </button>
-        </nav>
-    </header>
+    <header class="header"></header>
 
     <main class="main">
         <section id="home" class="hero">
@@ -100,13 +79,10 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Git12. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 
     <!-- JavaScript -->
+    <script src="src/js/components.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>
