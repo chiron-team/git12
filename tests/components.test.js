@@ -177,3 +177,86 @@ describe('SharedComponents', () => {
         expect(footer).not.toBeNull();
     });
 });
+
+describe('Google Maps iframe', () => {
+    const setupContactDOM = () => {
+        document.body.innerHTML = `
+            <header class="header"></header>
+            <main class="main">
+                <section class="section">
+                    <div class="container">
+                        <h2 class="section__title">Encuéntranos</h2>
+                        <p class="section__description">Visítanos en nuestra tienda. Estamos aquí para atenderte.</p>
+                        <div class="map" id="store-map">
+                            <iframe
+                                class="map__iframe"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661497050837!2d-99.16869292394964!3d19.427023681882103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sCalle%20Principal%20123%2C%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+                                width="100%"
+                                height="450"
+                                style="border: 0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación de Git12 — Calle Principal 123, Ciudad"
+                                aria-label="Mapa de ubicación de Git12"
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer"></footer>
+        `;
+    };
+
+    beforeEach(() => {
+        setupContactDOM();
+    });
+
+    afterEach(() => {
+        document.body.innerHTML = '';
+    });
+
+    test('should render the map container', () => {
+        const mapContainer = document.getElementById('store-map');
+        expect(mapContainer).not.toBeNull();
+        expect(mapContainer.classList.contains('map')).toBe(true);
+    });
+
+    test('should render a Google Maps iframe inside the map container', () => {
+        const iframe = document.querySelector('.map .map__iframe');
+        expect(iframe).not.toBeNull();
+        expect(iframe.tagName.toLowerCase()).toBe('iframe');
+    });
+
+    test('iframe src should point to Google Maps embed URL', () => {
+        const iframe = document.querySelector('.map__iframe');
+        expect(iframe.getAttribute('src')).toContain('https://www.google.com/maps/embed');
+    });
+
+    test('iframe width attribute should be 100%', () => {
+        const iframe = document.querySelector('.map__iframe');
+        expect(iframe.getAttribute('width')).toBe('100%');
+    });
+
+    test('iframe should have a descriptive title for accessibility', () => {
+        const iframe = document.querySelector('.map__iframe');
+        const title = iframe.getAttribute('title');
+        expect(title).not.toBeNull();
+        expect(title.length).toBeGreaterThan(0);
+    });
+
+    test('iframe should have lazy loading enabled', () => {
+        const iframe = document.querySelector('.map__iframe');
+        expect(iframe.getAttribute('loading')).toBe('lazy');
+    });
+
+    test('iframe should have allowfullscreen attribute', () => {
+        const iframe = document.querySelector('.map__iframe');
+        expect(iframe.hasAttribute('allowfullscreen')).toBe(true);
+    });
+
+    test('iframe should have referrerpolicy set', () => {
+        const iframe = document.querySelector('.map__iframe');
+        expect(iframe.getAttribute('referrerpolicy')).toBe('no-referrer-when-downgrade');
+    });
+});
